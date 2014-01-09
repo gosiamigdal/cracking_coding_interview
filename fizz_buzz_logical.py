@@ -9,3 +9,8 @@ def fizz_buzz_logical(n):
 
 
 fizz_buzz_logical(100)
+
+
+
+
+

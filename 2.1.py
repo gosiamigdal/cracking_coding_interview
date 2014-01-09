@@ -38,6 +38,25 @@ class LinkedList():
                 current.remove(current.data)
         return no_dup
 
+   def remove_duplicates2(self):
+        d = set()
+        current = self.head
+        while current != None:
+            d.add(current.data)
+            current = current.next
+        no_dup = LinkedList()
+        current = self.head
+        while current != None:
+            if current.data in d:
+                no_dup.append(current.data)
+                current.remove(current.data)
+        return no_dup
+
+
+
+
+
+
 
 
 
