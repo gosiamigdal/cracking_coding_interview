@@ -25,21 +25,18 @@ class Linked_list():
             current = current.next
 
     def find_nth(n):
-        find_index = n - 1
+        find_index = n 
         current = self.head
         current_ind = 0
         result = Linked_list()
-        while current_ind <= find_index:
+        while current_ind != find_index:
             result.append(current)
             current = current.next
             current_ind += 1
         return result
 
 
-new_list = Linked_list()
-new_list.printer()
-new_list.append(12)
-new_list.printer()
+
 
         
 
